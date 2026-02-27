@@ -1,0 +1,31 @@
+For this exercise, it is useful to start with understanding the inner loop, but in terms of what data it processes, and what operation it performs.
+
+<h2>Step 1: The Value of <code class=language-python>inner</code></h2>
+
+<p> In the outer iteration of the loop, <code class=language-python>inner</code> takes on each value in <code class=language-python>my_list</code>. This will be a list and is what the inner loop will iterate over.</p>
+
+<h2>Step 1: Understand the Inner Sum</h2>
+<p>For each inner list, the code computes its sum of <code class=language-python>inner</code> values in <code class=language-python>current</code>.</p>
+
+<ul>
+  <li><code>[1, 3]</code> gives <code>4</code></li>
+  <li><code>[4, 6]</code> gives <code>10</code></li>
+  <li><code>[8, 1]</code> gives <code>9</code></li>
+</ul>
+
+<h2>Step 2: Multiply into the Result</h2>
+<p>Each inner sum is multiplied into <code class=language-python>result</code>:</p>
+
+$$result = 1 \times 4 \times 10 \times 9 = 360$$
+
+<h2>Step 3: Confirm with Code</h2>
+<py-cell>
+my_list = [[1, 3], [4, 6], [8, 1]]
+result = 1
+for inner in my_list:
+    current = 0
+    for number in inner:
+        current = current + number
+    result = result * current
+print(result)
+</py-cell>

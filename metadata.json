@@ -1,0 +1,18 @@
+{
+    "title": "Sample Solution: Python Nested Loop Output Prediction",
+    "slug": "sample-solution-python-nested-loop-output-prediction",
+    "description": "Walks through each loop level and explains why the program output is 360.",
+    "authors": [
+        "chris-cooling"
+    ],
+    "tags": [
+        "python",
+        "sample-solution"
+    ],
+    "duration": 4,
+    "prerequisites": [
+        "exercise-python-nested-loop-output-prediction"
+    ],
+    "related": [
+    ]
+}
